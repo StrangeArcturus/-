@@ -40,10 +40,10 @@ item_boxes = {
 	'Ammo'		: ammo_box_img,
 }
 
-pine1_img = pygame.image.load('img/Background/pine1.png').convert_alpha()
-pine2_img = pygame.image.load('img/Background/pine2.png').convert_alpha()
-mountain_img = pygame.image.load('img/Background/mountain.png').convert_alpha()
-sky_img = pygame.image.load('img/Background/sky_cloud.png').convert_alpha()
+pine1_img = pygame.image.load('img/background/pine1.png').convert_alpha()
+pine2_img = pygame.image.load('img/background/pine2.png').convert_alpha()
+mountain_img = pygame.image.load('img/background/mountain.png').convert_alpha()
+sky_img = pygame.image.load('img/background/sky_cloud.png').convert_alpha()
 
 jump_sound = pygame.mixer.Sound('audio/jump.wav')
 jump_sound.set_volume(0.08)
@@ -56,7 +56,7 @@ pygame.mixer.music.play(-1)
 
 img_list = []
 for x in range(tile_types):
-	img = pygame.image.load(f'img/Tile/{x}.png')
+	img = pygame.image.load(f'img/tile/{x}.png')
 	img = pygame.transform.scale(img, (s_tile, s_tile))
 	img_list.append(img)
 
